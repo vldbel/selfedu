@@ -46,7 +46,6 @@ class DecisionTree:
         return obj
         
                   
-
 root = DecisionTree.add_obj(TreeObj(0))
 v_11 = DecisionTree.add_obj(TreeObj(1), root)
 v_12 = DecisionTree.add_obj(TreeObj(2), root, False)
