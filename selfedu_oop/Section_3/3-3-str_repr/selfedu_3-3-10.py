@@ -8,7 +8,7 @@ class PolyLine:
     
     def remove_coord(self, indx):
         """удаление координаты по индексу (порядковому номеру, начинается с нуля);"""
-        self.coords.remove(indx)
+        self.coords.pop(indx)
     
     def get_coords(self):
         """получение списка координат (в виде списка из кортежей)."""
