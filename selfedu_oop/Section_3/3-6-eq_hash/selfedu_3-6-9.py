@@ -43,6 +43,6 @@ for line in s_inp.strip().split("; "):
     lst_dims.append(Dimensions(*data))
 
 lst_dims = sorted(lst_dims, key=lst_dims.__hash__)
-print(lst_dims)
+# 
 for item in lst_dims:
     print(item.__hash__())

@@ -49,10 +49,9 @@ class Triangle:
             target_vars = ['_a', '_b', '_c']
             filtered_vars = list(filter(lambda x: x in target_vars, self.__dict__.keys()))
             if len(filtered_vars) >= len(target_vars)-1:
-                # we are setting 3rd var or changing one of them = need to check triangle validity
+                # we are setting 3rd var or changing one of them => need to check if triangle valid
                 target_vars.remove(name)
                 self.checktriange(value, self.__dict__[target_vars[0]], self.__dict__[target_vars[1]])
-
         super().__setattr__(name, value)
 
 
