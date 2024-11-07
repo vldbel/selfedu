@@ -40,17 +40,16 @@ class TicTacToe:
 
     def __getitem__(self, pos):
         row, col = pos
-        # print(f"row: {row}, col: {col}")
-        if not isinstance(row, slice) and not isinstance(col, slice):  # single cell
-            self.__check_idx(row), self.__check_idx(col)
-            return self.pole[row][col].value
-        elif isinstance(col, slice):  # horizontal slice
+        if isinstance(col, slice):  # horizontal slice
             self.__check_idx(row)
             return tuple(item.value for item in self.pole[row])
         elif isinstance(row, slice):
             self.__check_idx(col)
             return tuple(line[col].value for line in self.pole)
-
+        else:
+            self.__check_idx(row), self.__check_idx(col)
+            return self.pole[row][col].value
+        
     def display(self):
         for line in self.pole:
             print(line)

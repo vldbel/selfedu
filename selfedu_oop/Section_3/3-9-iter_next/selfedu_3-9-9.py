@@ -31,8 +31,8 @@ class TableValues:
     def _check_coord(self, row, col):
         if any((
                 not all(map(lambda idx: isinstance(idx, int), (row, col))),
-                not(-self.cols <= col < self.cols),
-                not(-self.rows <= row < self.rows),
+                not (-self.cols <= col < self.cols),
+                not (-self.rows <= row < self.rows),
             )):
             raise IndexError('неверный индекс')
         

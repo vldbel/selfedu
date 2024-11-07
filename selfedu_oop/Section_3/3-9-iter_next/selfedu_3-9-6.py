@@ -19,6 +19,7 @@ class TriangleListIterator:
             raise StopIteration
         return self.lst[self.line][self.cursor]
 
+
 lst = [['x00', 'x01', 'x02'],
        ['x10', 'x11'],
        ['x20', 'x21', 'x22', 'x23', 'x24'],
