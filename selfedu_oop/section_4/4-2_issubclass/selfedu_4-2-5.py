@@ -74,6 +74,6 @@ lst_animals = [obj for obj in lst_objs if isinstance(obj, Animals)]  # все о
 lst_plants = [obj for obj in lst_objs if isinstance(obj, Plants)] # все объекты, относящиеся к растениям (Plants);
 lst_mammals = [obj for obj in lst_objs if isinstance(obj, Mammals)]  # все объекты, относящиеся к млекопитающим (Mammals).
 
-print(lst_animals)
-print(lst_plants)
-print(lst_mammals)
+# print(lst_animals)
+# print(lst_plants)
+# print(lst_mammals)

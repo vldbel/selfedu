@@ -9,8 +9,6 @@ def integer_params_decorated(func):
         return func(self, *args, **kwargs)
     return wrapper
 
-
-
 def integer_params(cls):
     methods = {k: v for k, v in cls.__dict__.items() if callable(v)}
     for k, v in methods.items():

@@ -1,3 +1,5 @@
+"""Подвиг 3. Объявите в программе базовый класс с именем Book"""
+
 class Book:
     def __init__(self, title:str, author:str, pages:int, year:int):
         self.title = title

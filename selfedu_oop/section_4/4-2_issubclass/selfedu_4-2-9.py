@@ -15,3 +15,4 @@ phone = SmartPhone("samsung x10", (10, 5), 64)
 
 for attr, value in phone:
     print(attr, value)
+

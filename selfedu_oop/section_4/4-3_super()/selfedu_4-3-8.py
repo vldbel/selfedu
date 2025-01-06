@@ -14,6 +14,5 @@ class SoftList(list):
 sl = SoftList("python")
 print(sl[0]) # 'p'
 print(sl[-1]) # 'n'
-print(len(sl))
 print(sl[6]) # False
 print(sl[-7]) # False

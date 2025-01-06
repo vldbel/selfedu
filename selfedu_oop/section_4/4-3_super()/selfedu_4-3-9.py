@@ -11,7 +11,6 @@ class StringDigit(str):
         return self.__class__(res)
     
     def __radd__(self, other):
-        print(self, other)
         res = other.__add__(self)
         return self.__class__(res)
 
