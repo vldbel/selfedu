@@ -19,7 +19,7 @@ class GeneralView:
     allowed_methods = ('GET', 'POST', 'PUT', 'DELETE')
 
     def render_request(self, request:dict):
-        if 'method' not in self.allowed_methods:
+        if request.get('method', None) not in self.allowed_methods:
             raise TypeError(f"Метод {request.get('method')} не разрешен.")
         method_request = request.get('method').lower()  # имя метода, малыми буквами
         return getattr(self, method_request)(request)

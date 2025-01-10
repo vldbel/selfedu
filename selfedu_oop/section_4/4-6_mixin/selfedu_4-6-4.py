@@ -65,6 +65,7 @@ digits = [PrimeNumber(3), PrimeNumber(1), PrimeNumber(4), FloatPositive(1.5), Fl
 # Затем, используя функции isinstance() и filter(), сформируйте следующие списки из указанных объектов:
 lst_positive = filter(lambda x: isinstance(x, Positive), digits) # все объекты, относящиеся к классу Positive;
 lst_float = filter(lambda x: isinstance(x, Float), digits) # все объекты, относящиеся к классу Float.
+
 print(list(lst_positive))
 print(list(lst_float))
 
